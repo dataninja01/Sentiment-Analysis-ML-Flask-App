@@ -20,7 +20,7 @@ RUN cd $HOME && \
     cp -a Sentiment-Analysis-ML-Flask-App/opt/ && \
     chmod u+x /opt/app.py
     
-RUN python3 /opt/Sentiment-Analysis-ML-Flask-App/app.py
+RUN python3 /opt/app.py
 # expose ports
 EXPOSE 8000
 
