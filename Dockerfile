@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get -y upgrade
 
 #Install Sentiment anlysis dependencies
-RUN python3 -m pip install click==6.7 Flask==1.0.2 Flask-WTF==0.14.2 gunicorn==19.9.0 itsdangerous==0.24 Jinja2==2.10 MarkupSafe==1.0 vaderSentiment==3.2.1 six==1.12.0 Werkzeug==0.14.1 WTForms==2.2.1 nltk>=3.4.5 scikit-learn>=0.18 requests
+RUN python3 -m pip install Flask==1.1.1 WTForms==2.2.1 Flask_WTF==0.14.2 Werkzeug==0.16.0 tensorflow==2.2.0
 
 RUN pip3 install pillow
 # Install Sentiment-Analysis API library
